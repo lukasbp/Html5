@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- quando escreve alguma coisa, 
+    ele pesquisa no datalist e retorna os dados parecidos -->
+    <input action="get" action="#">
+        <input list="browsers" />
+        <!-- cria uma lista selecionavel dentro de um form -->
+        <datalist id="browsers">
+            <!-- opções da lista -->
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Internet Explorer">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <button type="submit">enviar</button>
+        <!-- cria um campo de marcação opcional, onde só uma 
+        opção pode ser selecionada -->
+        <fieldset>
+            <legend>Title</legend>
+            <input type="radio" id="radio"> <label for="radio">Click me</label>
+        </fieldset>
+        <!-- cria uma combobox com as opções abaixo -->
+        <select name="select">
+            <option value="valor1">Valor 1</option> 
+            <option value="valor2" selected>Valor 2</option>
+            <option value="valor3">Valor 3</option>
+        </select>
+        <!-- campo de texto redimensionavel -->
+        <textarea name="textarea"
+        rows="5" cols="30"
+        placeholder="Comment text."></textarea>
+        <!-- campo com botão deslizavel, com alcance de valor definido -->
+        <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+            0<input type="range" name="b" value="50" />100 +<input type="number" name="a" value="10" /> =
+            <output name="result"></output>
+        </form>
+        <!-- cria uma barra de progresso -->
+        <progress value="70" max="100">70 %</progress>
+        <!-- quando clicado acontecerá algo -->
+        <button onclick=""></button>
+        <!-- quando o mouse sobrepor tal campo acontecerá algo -->
+        <button onmouseover=""></button>
+        <!-- quando o mouse sair de tal campo acontecerá algo -->
+        <button onmouseout=""></button>
+        <!-- campo de marcação -->
+        <input type="checkbox" name="bruh"></input>
+        <!-- mostra a paleta de cores -->
+        <input type="color"></input>
+        <!-- mostra um calendario -->
+        <input type="date"></input>
+        <!-- mostra um calendario com horas -->
+        <input type="datetime"></input>
+        <!-- permite envio de arquivos -->
+        <input type="file"></input>
+        <!-- campo de senha -->
+        <input type="password"></input>
+        <!-- campo de email, com validação -->
+        <input type="email" name="b" required></input>
+        <!-- reseta os campos do site -->
+        <input type="reset"></input>
+    </form>
+</body>
+</html>

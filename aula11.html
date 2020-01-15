@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- tabela html -->
+    <p>Simple table with header</p>
+    <table>
+        <!-- cada tr equivale a uma linha -->
+        <tr>
+            <!-- cabeçalho da tabela -->
+            <th>First name</th>
+            <th>Last name</th>
+        </tr>
+        <tr>
+            <!-- célula da tabela -->
+            <td>John</td>
+            <td>Doe</td>
+        </tr>
+        <tr>
+            <!-- célula da tabela -->
+            <td>Jane</td>
+            <td>Doe</td>
+        </tr>
+    </table>
+    <!-- outra tabela -->
+    <p>Table with thead, tfoot, and tbody</p>
+    <table>
+        <!-- agrupa colunas das tabelas, e estiliza elas -->
+        <colgroup>
+            <col span="1" style="background-color: #0f0;">
+            <col span="2" style="background-color: yellow;">
+        </colgroup>
+        <!-- questão de semântica, cabeça da tabela -->
+        <thead>
+            <tr>
+                <th>Header content 1</th>
+                <th>Header content 2</th>
+            </tr>
+        </thead>
+        <!-- questão de semântica, pé da tabela -->
+        <tfoot>
+            <tr>
+                <td>Footer content 1</td>
+                <td>Footer content 2</td>
+            </tr>
+        </tfoot>
+        <!-- questão de semântica, corpo da tabela -->
+        <tbody>
+            <tr>
+                <td>Body content 1</td>
+                <td>Body content 2</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

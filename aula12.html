@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- get= read,post= create,put= update e delete. por padrão o form, se não definido
+    será um get -->
+    <!-- método get envia informações ao servidor através da url
+    e lê os dados -->
+    <form action="#" method="GET">
+        <!-- nome -->
+        <label for="GET-name">Name:</label>
+        <!-- caixa de inserção de texto -->
+        <input id="GET-name" type="text" name="name">
+        <!-- botão de envio de informações -->
+        <input type="submit" value="Save">
+    </form>
+    <!-- o post esconde os parametros passados na url, e pede para criar
+    novas informações -->
+    <form action="" method="post">
+        <label for="POST-name">Name:</label>
+        <input id="POST-name" type="text" name="name">
+        <input type="submit" value="Save">
+    </form>
+    <!-- também passa informações por url e atualiza-ás -->
+    <form action="" method="put">
+        <label for="POST-name">Name:</label>
+        <input id="POST-name" type="text" name="name">
+        <input type="submit" value="Save">
+    </form>
+    <!-- deleta os dados especificados -->
+    <form action="" method="delete">
+        <label for="POST-name">Name:</label>
+        <input id="POST-name" type="text" name="name">
+        <input type="submit" value="Save">
+    </form>
+</body>
+</html>
